@@ -1,3 +1,24 @@
-.title {
-  color: red;
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("./images/Header-llustration-desktop@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #6b6969;
+}
+
+li {
+  margin-left: 2%;
 }
