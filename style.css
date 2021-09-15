@@ -3,12 +3,23 @@ html {
 }
 
 body {
-  background-image: url("./images/Header-llustration-desktop@2x.png");
+  background-image: url("./images/Header-llustration-desktop.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 0;
 }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1#wlcm,
+i.fa-bars {
+  color: white;
+}
+
 .nav-list {
   display: flex;
   justify-content: center;
@@ -24,7 +35,7 @@ a {
 }
 
 li {
-  margin-left: 2%;
+  margin-left: 18px;
 }
 
 .center {
@@ -34,20 +45,23 @@ li {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.name {
+
+h1.name {
   color: #172840;
   font-family: Inter, sans-serif;
   font-weight: bold;
   font-size: 48px;
-  margin: 0px;
+  margin: 0;
 }
+
 .title {
   color: #36b37e;
   font-family: Inter, sans-serif;
   font-weight: bold;
   font-size: 48px;
-  margin: 0px;
+  margin: 0;
 }
+
 .description {
   font-size: 18px;
   color: #303841;
@@ -61,4 +75,31 @@ li {
   color: #172840;
   margin-left: 2%;
   margin-top: 2%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav-list {
+    display: none;
+  }
+
+  body {
+    background-size: 230% 100%;
+  }
+
+  .center {
+    top: 50%;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h1#wlcm,
+  i.fa-bars {
+    color: black;
+    margin: 10px 10px;
+  }
+
+  h1#wlcm {
+    font-family: sans-serif;
+  }
 }
