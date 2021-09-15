@@ -7,6 +7,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  margin: 0;
 }
 .nav-list {
   display: flex;
@@ -16,9 +17,48 @@ body {
 
 a {
   text-decoration: none;
-  color: #6b6969;
+  color: #303841;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
 }
 
 li {
   margin-left: 2%;
+}
+
+.center {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.name {
+  color: #172840;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0px;
+}
+.title {
+  color: #36b37e;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0px;
+}
+.description {
+  font-size: 18px;
+  color: #303841;
+  line-height: 25px;
+  font-family: Inter, sans-serif;
+}
+
+.fab,
+.far {
+  font-size: 25px;
+  color: #172840;
+  margin-left: 2%;
+  margin-top: 2%;
 }
